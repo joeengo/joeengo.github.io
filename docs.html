@@ -12,9 +12,98 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>engo</title>
+    <title>document</title>
   </head>
   <body>
-    <p style="font-size: 50px; text-align: center">drop in again soon!</p>
-  </body>
+    <!--Navbar-->
+    <div class="navbar">
+      <div class="container flex">
+        <h1 class="logo">engo</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="scripts.html">scripts</a></li>
+            <li><a href="help.html">help</a></li>
+            <li><a href="docs.html">docs</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!--Navbar-->
+
+    <!--documentation-->
+<div class="docs"></div>
+<h1 style="text-align:center">documentation</h1>
+<hr>
+
+<section id="spooftool" class="docbox">
+<h2 class="title">SpoofTool</h2>
+
+<section class="box">
+<p class="subtitle">Spoof an instance</p>
+<p class="embedmint">&lttable&gt x = SpoofInstance(&ltinstance&gt)</p>
+</section>
+
+<section class="box"></section>
+<p class="subtitle">Edit a property</p>
+<p class="embedmint">x.&ltproperty&gt = nil</p>
+<br>
+<p class="embedmint">x.Parent = game.Players.LocalPlayer.Character</p>
+<section class="box">
+
+</section>
+
+<section id="engoui" class="docbox">
+<h2 class="title">Engo UI LIB</h2>
+
+<section class="box">
+<p class="subtitle">Create the main UI</p>
+<p class="embedmint">local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/joeengo/exploiting/main/EngoUILib"))() <br> local main = library:CreateUI(name, Enum.KeyCode.RightShift)</p>
+</section>
+
+<section class="box"></section>
+<p class="subtitle">Create a tab</p>
+<p class="embedmint">local tab = main:CreateTab(name)</p>
+<br>
+<section class="box">
+
+<section class="box"></section>
+<p class="subtitle">Create a textlabel</p>
+<p class="embedmint">tab:CreateLabel(text, description)</p>
+<br>
+<section class="box">
+
+<section class="box"></section>
+<p class="subtitle">Create a button</p>
+<p class="embedmint">tab:CreateButton(text, description, function() end)</p>
+<br>
+<section class="box">
+
+<section class="box"></section>
+<p class="subtitle">Create a toggle</p>
+<p class="embedmint">tab:CreateToggle(text, description, function(callback) end)</p>
+<br>
+<section class="box">
+
+<section class="box"></section>
+<p class="subtitle">Create a slider</p>
+<p class="embedmint">tab:CreateSlider(name, min, max, function(value) end)</p>
+<br>
+<section class="box">
+
+<section class="box"></section>
+<p class="subtitle">Create a textbox</p>
+<p class="embedmint">tab:CreateTextbox(name, function(input) end)</p>
+<br>
+<section class="box">
+
+<section class="box"></section>
+<p class="subtitle">Create a dropdown</p>
+<p class="embedmint">tab:CreateDropdown(name, tableOptions, function(option) end)</p>
+<br>
+<section class="box">
+
+</section>
+</div>
+</body>
 </html>
