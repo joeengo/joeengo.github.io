@@ -67,9 +67,21 @@ img {
 }
 
 .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
   background-color: #1a1a1a;
-  color: #ffffff;
-  height: 70px;
+  color: white;
+}
+
+.footer .credits {
+  text-align: left;
+  margin-left: auto;
+  font-size: 14px;
+  padding: 4px 10px;
+  color: #6dffaf;
 }
 
 .container {
@@ -88,7 +100,7 @@ img {
 
 .showcase-text {
   text-align: center;
-  margin: auto;
+  margin: 200px 0px;
 }
 
 .btn-outlined {
@@ -146,4 +158,16 @@ img {
   width: auto;
   overflow-wrap: break-word;
   overflow: auto;
+}
+
+.hyperlink {
+  color: #6dffaf;
+  text-decoration: underline;
+}
+
+hr {
+  width: 10%;
+  color: #ffffff;
+  text-align: center;
+  margin: 10px auto;
 }
