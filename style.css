@@ -42,10 +42,14 @@ img {
   background-color: #1a1a1a;
   color: #ffffff;
   height: 70px;
+}
+
+.navbar .logo {
+  color: #ffffff;
   transition: color 500ms;
 }
 
-.navbar:hover {
+.navbar .logo:hover {
   color: #6dffaf;
 }
 
@@ -81,15 +85,10 @@ img {
   height: 100%;
 }
 
-.showcase-text {
-  text-align: center;
-  margin: 200px 0px;
-}
-
 .btn-outlined {
   color: #ffffff;
   border: 1px solid;
-  border-color: #ffffff;
+  border-color: #6dffaf;
   border-radius: 5px;
   padding: 4px;
   margin: 5px auto;
@@ -98,11 +97,6 @@ img {
 
 .btn-list {
   align-items: center;
-}
-
-.btn-outlined:hover {
-  border-color: #6dffaf;
-  color: #6dffaf;
 }
 
 .scripts-list {
@@ -206,4 +200,81 @@ hr {
 
 .docbox hr {
   margin-bottom: 20px;
+}
+
+.home-page {
+  color: #ffffff;
+}
+
+.home-page .description {
+  text-align: center;
+}
+
+.home-page .home-left {
+  text-align: left;
+  display: inline-block;
+  overflow-wrap: break-word;
+  padding: 10px;
+  margin-top: 125px;
+  margin-left: 200px;
+  inline-size: 400px;
+}
+
+.home-page .home-right {
+  text-align: right;
+  display: inline-block;
+  overflow-wrap: break-word;
+  padding: 10px;
+  margin-top: 125px;
+  margin-left: 200px;
+  inline-size: 400px;
+}
+
+.home-page .logo {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 140px;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  transition: transform 500ms;
+}
+
+.home-page .logo:hover {
+  color: #f56b6b;
+  transition: color 500ms;
+}
+
+.home-page .logo:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  transition: transform 500ms;
+}
+
+.home-page .logo:hover {
+  animation-name: home-logo;
+  animation-duration: 7s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes home-logo {
+  18% {
+    color: #f56b7d;
+  }
+  38% {
+    color: #f5c56b;
+  }
+  48% {
+    color: #b9f56b;
+  }
+  68% {
+    color: #6bb7f5;
+  }
+  88% {
+    color: #be6bf5;
+  }
+  100% {
+    color: #f56b6b;
+  }
 }
