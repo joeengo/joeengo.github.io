@@ -262,3 +262,10 @@ hr {
   display: inline-flex;
   align-items: center;
 }
+
+.message {
+  font-family: "Poppins", "Helvetica Neue";
+  text-align: center;
+  font-size: 50px;
+  margin-top: 10px;
+}
