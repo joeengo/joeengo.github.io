@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+  <head>
+    <meta property="og:title" content="engo's website" />
+    <meta property="og:description" content="documentation for my scripts" />
+    <meta property="og:url" content="https://joeengo.github.io" />
+    <meta property="og:image" content="https://i.vgy.me/GB6iFd.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>documentation</title>
+  </head>
+  <body>
+    <script id="replace_with_navbar" src="../nav.js"></script>
+
+    <!--documentation-->
+
+    <section class="docbox">
+      <h2 class="title">Engo UI LIB V2</h2>
+
+      <p class="subtitle">Create the main UI</p>
+      <p class="embedmint">
+        local library =
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/joeengo/exploiting/main/EngoUILIB_V2.lua"))()
+        <br />
+        local main = library:CreateMain(Title, Description,
+        Enum.KeyCode.RightAlt)
+      </p>
+
+      <p class="subtitle">Create a tab</p>
+      <p class="embedmint">local tab = main:CreateTab(name)</p>
+      <br />
+
+      <p class="subtitle">Create a textlabel</p>
+      <p class="embedmint">local label = tab:CreateLabel(text)</p>
+      <br />
+
+      <p class="subtitle">Create a button</p>
+      <p class="embedmint">tab:CreateButton(text, function)</p>
+      <br />
+
+      <p class="subtitle">Create a toggle</p>
+      <p class="embedmint">tab:CreateToggle(text, function)</p>
+      <br />
+
+      <p class="subtitle">Create a slider</p>
+      <p class="embedmint">tab:CreateSlider(name, min, max, function)</p>
+      <br />
+
+      <p class="subtitle">Create a textbox</p>
+      <p class="embedmint">tab:CreateTextbox(name, function)</p>
+      <br />
+
+      <p class="subtitle">Create a dropdown</p>
+      <p class="embedmint">tab:CreateDropdown(name, list, function)</p>
+      <br />
+
+      <p class="subtitle">Create a textlist</p>
+      <p class="embedmint">tab:CreateTextList(name, function)</p>
+      <br />
+
+      <p class="subtitle">Create a colorslider</p>
+      <p class="embedmint">
+        tab:CreateColorSlider(name, function) -- color = Color3.fromHSV(value,
+        1, 1) to use as a color.
+      </p>
+      <br />
+
+      <p class="subtitle">Toggle a toggle</p>
+      <p class="embedmint">toggle:Toggle()</p>
+      <br />
+
+      <p class="subtitle">Update label</p>
+      <p class="embedmint">label:Update(text)</p>
+      <br />
+
+      <p class="subtitle">Add an option to a dropdown</p>
+      <p class="embedmint">dropdown:CreateOption(option)</p>
+      <br />
+
+      <p class="subtitle">Add options to a dropdown</p>
+      <p class="embedmint">dropdown:CreateOptions(list)</p>
+      <br />
+
+      <p class="subtitle">Refresh a dropdown</p>
+      <p class="embedmint">dropdown:RefreshOptions(list)</p>
+      <br />
+
+      <p class="subtitle">Set a colorslider rainbow</p>
+      <p class="embedmint">colorslider:SetRainbow(true)</p>
+      <br />
+
+      <p class="subtitle">Set a colorslider color</p>
+      <p class="embedmint">colorslider:SetValue(Hue)</p>
+      <br />
+
+      <p class="subtitle">Create default settings menu</p>
+      <p class="embedmint">main:CreateSettings()</p>
+      <br />
+    </section>
+  </body>
+</html>
