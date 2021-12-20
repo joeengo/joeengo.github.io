@@ -1,4 +1,4 @@
-fetch('/joeengo.github.io/assets/nav.html', {
+fetch('https://raw.githubusercontent.com/joeengo/joeengo.github.io/main/assets/nav.html', {
     method: "GET",
     headers: {"Content-Type": "text/plain"},
 })
