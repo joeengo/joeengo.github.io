@@ -1,4 +1,7 @@
-fetch('/joeengo.github.io/nav.html')
+fetch('/joeengo.github.io/nav.html', {
+    method: "GET",
+    headers: {"Content-Type": "text/plain"},
+})
 .then(res => res.text())
 
 .then(text => {
