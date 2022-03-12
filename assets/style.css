@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Outfit&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 2px;
+    margin: 0px;
+}
+
+body {
+    font-family: "Anonymous Pro", "Outfit";
+    color: #ffffff;
+    background-color: #101010;
+}
+
+p { 
+    font-size: 16px;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+th { 
+    font-size: 3em;
+    padding-bottom: 20px;
+}
+
+a { 
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+ul { 
+    list-style-type: none;
+}
+
+.proj-list li {
+    padding: 5px;
+}
+
+a:hover {
+    color: #00ff90;
+    text-decoration: underline;
+    transition: color 1000ms;
+}
+
+.button { 
+    font-family: "Anonymous Pro", "Outfit";
+    font-weight: 100;
+    background-color: #101010;
+    border: none;
+    color: white;
+    padding: 10px 100px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #00ff90;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+    transition: background-color 500ms;
+}
+
+.button:hover {
+    background-color: #00ff90;
+    color: #000000;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.hcenter {
+    margin-top: 0px;
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    justify-content: center;
+}
+
+.vcenter {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align:center;
+}
+
+.tcenter {
+    text-align: center;
+}
+
+.border {
+    border: 3px solid #00ff90;
+    padding: 0px;
+}
+
+.header {
+    font-size: 3em;
+    margin: 0px;
+    margin-bottom: 0px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.mint {
+    color: #00ff90;
+}
+
+
+.typewriter{
+    overflow: hidden;
+    white-space: nowrap;
+    animation: 
+      type 2.5s steps(20, end),
+      blink .50s step-end infinite;
+}
+
+  @keyframes type {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #00ff90; }
+  }
