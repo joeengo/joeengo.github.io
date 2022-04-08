@@ -10,6 +10,8 @@ body {
     font-family: "Anonymous Pro", "Outfit";
     color: #ffffff;
     background-color: #101010;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 p { 
