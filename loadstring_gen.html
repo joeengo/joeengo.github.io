@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta property="og:title" content="loadstring generator" />
+    <meta property="og:description" content="allows you to instantly generate a loadstring from a raw github/pastebin link" />
+    <meta property="og:url" content="https://engo.gq/loadstring_gen" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="shortcut icon" type="image/x-icon" href="assets/logosmall1024.ico" />
+    <title>engo.gq</title>
+
+    <script>
+    function loadstringify() {
+        let text = document.getElementById("urlbox").value
+	    navigator.clipboard.writeText("loadstring(game:HttpGet('"+ text + "', true))()");
+	}
+    </script>
+</head>
+<body>
+    <div class="center">
+        <p>loadstring generator</p>
+        <input style="text-align:center;"  id="urlbox" size="100" value="Input" type="text">
+        <br>
+        <br>
+        <button class="button" onclick="loadstringify()">copy loadstring</button>
+    </div>
+</body>
+</html>
