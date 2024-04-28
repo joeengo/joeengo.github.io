@@ -38,6 +38,11 @@
             height: 27px;
             padding-left: 5px;
             padding-right: 5px;
+            filter: brightness(85%) sepia(0%) saturate(100%);
+        }
+
+        .icon-clickable:hover {
+            animation: smoothrotate .2s  ease-in-out;
         }
 
         .icon-list {
@@ -48,26 +53,51 @@
             margin-top: 27%;
         }
 
+        #luau-sub {
+            background: -webkit-linear-gradient(#00A2FF, #00A2FA);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 400;
+        }
+
+        @keyframes smoothrotate {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            25% {
+                transform: rotate(-17deg);
+            }
+
+            75% {
+                transform: rotate(17deg);
+            }
+
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+
     </style>
 </head>
 <body>
     <h1 class="center" id="engo-title">engo</h1>
-    <h1 class="center" id="engo-desc">luau developer</h1>
+    <h1 class="center" id="engo-desc"><a id="luau-sub" href="https://luau-lang.org" target="_blank">Luau</a> developer</h1>
     <table class="center icon-list">
         <tr>
             <td>
-                <a href="">
-                    <img class="icon-clickable" onclick="window.open('https://discord.com/users/735432575140757605')" src="discord-mark-white.svg" alt="my discord"/>
+                <a href="https://discord.com/users/735432575140757605" target="_blank">
+                    <img class="icon-clickable" src="discord-mark-white.svg" alt="my discord"/>
                 </a>
             </td>
             <td>
-                <a href="">
-                    <img class="icon-clickable" onclick="window.open('https://github.com/joeengo')" src="github-mark-white.svg" alt="my github"/>
+                <a href="https://github.com/joeengo" target="_blank">
+                    <img class="icon-clickable" src="github-mark-white.svg" alt="my github"/>
                 </a>
             </td>
             <td>
-                <a href="">
-                    <img class="icon-clickable" onclick="window.open('https://youtube.com/@joeengo')" src="yt_icon_mono_dark.svg" alt="my youtube"/>
+                <a href="https://youtube.com/@joeengo" target="_blank">
+                    <img class="icon-clickable" src="yt_icon_mono_dark.svg" alt="my youtube"/>
                 </a>
             </td>
           
