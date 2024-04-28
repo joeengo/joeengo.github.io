@@ -1,1 +1,78 @@
-hello from index!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+        body {
+            background-color: #0d0c20;
+            font-family: "Roboto Mono";
+            color: white;
+        }
+
+        .center {
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        #engo-title {
+            margin-top: -75px;
+            font-weight: 300;
+            font-size: 175px;
+        }
+
+        #engo-desc {
+            margin-top: 10px;
+            padding-right: 180px;
+            font-weight: 300;
+            font-size: 25px;
+        }
+
+        .icon-clickable {
+            width: 27px;
+            height: 27px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        .icon-list {
+            margin-top: 80px;
+        }
+
+        .title-2 {
+            margin-top: 27%;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="center" id="engo-title">engo</h1>
+    <h1 class="center" id="engo-desc">luau developer</h1>
+    <table class="center icon-list">
+        <tr>
+            <td>
+                <a href="">
+                    <img class="icon-clickable" onclick="window.open('https://discord.com/users/735432575140757605')" src="discord-mark-white.svg" alt="my discord"/>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <img class="icon-clickable" onclick="window.open('https://github.com/joeengo')" src="github-mark-white.svg" alt="my github"/>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <img class="icon-clickable" onclick="window.open('https://youtube.com/@joeengo')" src="yt_icon_mono_dark.svg" alt="my youtube"/>
+                </a>
+            </td>
+          
+        </tr>
+      </table>
+
+</body>
+</html>
