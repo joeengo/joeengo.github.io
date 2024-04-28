@@ -1,61 +1,78 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <title>?</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    * {
-      line-height: 1.2;
-      margin: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
-    html {
-      color: #888;
-      display: table;
-      font-family: sans-serif;
-      height: 100%;
-      text-align: center;
-      width: 100%;
-    }
+        body {
+            background-color: #0d0c20;
+            font-family: "Roboto Mono";
+            color: white;
+        }
 
-    body {
-      display: table-cell;
-      vertical-align: middle;
-      margin: 2em auto;
-    }
+        .center {
+            margin: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
 
-    h1 {
-      color: #555;
-      font-size: 2em;
-      font-weight: 400;
-    }
+        #engo-title {
+            margin-top: -75px;
+            font-weight: 300;
+            font-size: 175px;
+        }
 
-    p {
-      margin: 0 auto;
-      width: 280px;
-    }
+        #engo-desc {
+            margin-top: 10px;
+            padding-right: 180px;
+            font-weight: 300;
+            font-size: 25px;
+        }
 
-    @media only screen and (max-width: 280px) {
+        .icon-clickable {
+            width: 27px;
+            height: 27px;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
 
-      body,
-      p {
-        width: 95%;
-      }
+        .icon-list {
+            margin-top: 80px;
+        }
 
-      h1 {
-        font-size: 1.5em;
-        margin: 0 0 0.3em;
-      }
+        .title-2 {
+            margin-top: 27%;
+        }
 
-    }
-  </style>
+    </style>
 </head>
-
 <body>
-  <h1>Please check back later.</h1>
-  <p>This page is currently under construction, come back soon!</p>
-</body>
+    <h1 class="center" id="engo-title">engo</h1>
+    <h1 class="center" id="engo-desc">luau developer</h1>
+    <table class="center icon-list">
+        <tr>
+            <td>
+                <a href="">
+                    <img class="icon-clickable" onclick="window.open('https://discord.com/users/735432575140757605')" src="discord-mark-white.svg" alt="my discord"/>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <img class="icon-clickable" onclick="window.open('https://github.com/joeengo')" src="github-mark-white.svg" alt="my github"/>
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <img class="icon-clickable" onclick="window.open('https://youtube.com/@joeengo')" src="yt_icon_mono_dark.svg" alt="my youtube"/>
+                </a>
+            </td>
+          
+        </tr>
+      </table>
 
+</body>
 </html>
