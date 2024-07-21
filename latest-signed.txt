@@ -1,3 +1,9 @@
+This is the first PGP message on my website (joeengo.github.io)
+You can verify this message with keybase or PGP Tool (Online alternative, https://pgptool.org/)
+This is the ONLY way you can verify 100% a message is coming from engo himself, if you suspect anything from my account(s) please request a PGP signed message!
+
+Current Discord: @joeengo (735432575140757605)
+
 -----BEGIN PGP MESSAGE-----
 Version: Keybase OpenPGP v2.0.76
 Comment: https://keybase.io/crypto
