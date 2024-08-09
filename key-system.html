@@ -23,7 +23,7 @@
         const id = urlParams.get('id')
         $.get(`https://tattered-reflective-jingle.glitch.me/getkey${id && `?id=${id}`}`, function(data, status) {
           if (data.startsWith('http')) {
-            window.location = 'http://127.0.0.1:5500/client-pages/key.html' // = data
+            window.location = data
             return;
           }
 
