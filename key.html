@@ -19,6 +19,7 @@
     </style>
     <script>
         if (!document.referrer.startsWith('https://lootdest.org')) {
+            console.log(document.referrer)
             $('#info-text').ready(function() {
                 document.getElementById('info-text').textContent = 'Please retry the key system (Error 1)'
             })
