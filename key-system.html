@@ -21,7 +21,7 @@
       function onClick() {
         const urlParams = new URLSearchParams(window.location.search);
         const id = urlParams.get('id')
-        $.get(`https://tattered-reflective-jingle.glitch.me/getkey${id && `?id=${id}`}`, function(data, status) {
+        $.get(`https://tattered-reflective-jingle.glitch.me/getkey`, function(data, status) {
           if (data.startsWith('http')) {
             window.location = data
             return;
