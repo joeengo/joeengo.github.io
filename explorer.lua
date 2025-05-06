@@ -4,7 +4,7 @@
   drawing library based explorer
 
   Copy this loadstring for internet load via engos.site (slower).
-  loadstring(game:HttpGet('https://engos.site/explorer.luau'))()
+  loadstring(game:HttpGet('https://engos.site/explorer.lua'))()
   
   Copy this loadstring for internet load via github repository (slow)
   loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/engo-explorer/refs/heads/main/init.lua'))()
