@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>engocheat - Stay Winning</title>
+  <style>
+    :root {
+      --bg-dark: #121212;
+      --bg-darker: #1e1e1e;
+      --border-dark: #333;
+      --accent: #6366f1; /* indigo-500 */
+      --accent-hover: #4f46e5; /* indigo-600 */
+      --text-light: #c4c4c4;
+      --text-muted: #888;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #000, #1a1a1a);
+      color: white;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.3rem;
+      letter-spacing: 0.05em;
+      text-transform: lowercase;
+    }
+
+    p.lead {
+      color: var(--text-muted);
+      max-width: 640px;
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    /* Code & Copy Button Container */
+    .code-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      max-width: 720px;
+      width: 100%;
+      margin-bottom: 1rem;
+      gap: 12px;
+    }
+
+    pre.script-block {
+      flex: 1;
+      background-color: var(--bg-darker);
+      border: 1px solid var(--border-dark);
+      border-radius: 1rem;
+      padding: 1rem 1.5rem;
+      font-family: monospace;
+      font-size: 0.875rem;
+      color: var(--text-light);
+      user-select: all;
+      white-space: pre-wrap;
+      word-break: break-word;
+      overflow-x: auto;
+      min-width: 0;
+      margin: 0;
+      max-height: 4.5rem; /* keep it reasonably short */
+      line-height: 1.3rem;
+      display: flex;
+      align-items: center;
+    }
+
+    button.copy-btn {
+      background: var(--accent);
+      border: none;
+      border-radius: 0.75rem;
+      color: white;
+      padding: 0.5rem 1rem;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      user-select: none;
+      flex-shrink: 0;
+      height: fit-content;
+      box-shadow: 0 2px 8px rgb(99 102 241 / 0.6);
+    }
+
+    button.copy-btn:hover {
+      background-color: var(--accent-hover);
+    }
+
+    p.copy-msg {
+      color: #4ade80; /* green-400 */
+      font-size: 0.9rem;
+      margin-top: 0;
+      margin-bottom: 2rem;
+      text-align: center;
+      display: none;
+    }
+
+    /* Features Section */
+
+    .features {
+      max-width: 960px;
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 3rem;
+    }
+
+    .feature-card {
+      background: var(--bg-darker);
+      border: 1px solid var(--border-dark);
+      border-radius: 1rem;
+      padding: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .feature-card:hover {
+      box-shadow: 0 8px 24px rgb(99 102 241 / 0.5);
+    }
+
+    .feature-icon {
+      width: 36px;
+      height: 36px;
+      stroke: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .feature-content h3 {
+      margin: 0 0 0.25rem 0;
+      font-size: 1.25rem;
+    }
+
+    .feature-content p {
+      margin: 0;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      line-height: 1.3;
+    }
+
+    footer {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: auto;
+      padding-bottom: 1rem;
+    }
+
+    /* YouTube embed */
+    .video-container {
+      max-width: 720px;
+      width: 100%;
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgb(0 0 0 / 0.7);
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 405px;
+      border: none;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>engocheat</h1>
+  <p class="lead">Stay Winning</p>
+
+  <div class="code-container">
+    <pre class="script-block" id="scriptBlock" tabindex="0">
+loadstring(game:HttpGet('https://raw.githubusercontent.com/joeengo/engocheat/main/lua/src/loader.lua', true))()
+    </pre>
+    <button class="copy-btn" id="copyBtn" title="Copy script">Copy</button>
+  </div>
+  <p class="copy-msg" id="copyMsg">Copied to clipboard!</p>
+
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/NhqXQLsrbRE"
+      title="engocheat Demo Video"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <section class="features">
+    <div class="feature-card">
+      <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+      <div class="feature-content">
+        <h3>Speed & Fly</h3>
+        <p>Move with unmatched freedom across any Roblox map.</p>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+      <div class="feature-content">
+        <h3>Silent Aim</h3>
+        <p>Precision targeting with stealth functionality.</p>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+      <div class="feature-content">
+        <h3>ESP & Tracers</h3>
+        <p>See players through walls and track their movements.</p>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-3-3.87"/><path d="M7 21v-2a4 4 0 0 1 3-3.87"/><circle cx="12" cy="7" r="4"/></svg>
+      <div class="feature-content">
+        <h3>Skeleton</h3>
+        <p>Highlight enemy bone structure for ultimate tracking.</p>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M6 20h12v-2H6v2zm0-5h12v-2H6v2zm0-7v2h12V8H6z"/></svg>
+      <div class="feature-content">
+        <h3>Custom Scripts</h3>
+        <p>Inject custom features and extend functionality.</p>
+      </div>
+    </div>
+
+    <div class="feature-card">
+      <svg class="feature-icon" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path fill="currentColor" d="M12 7v5l4 2"/></svg>
+      <div class="feature-content">
+        <h3>Sleek UI</h3>
+        <p>Modern and minimal interface with powerful toggles.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 engocheat. All rights reserved.
+  </footer>
+
+  <script>
+    const copyBtn = document.getElementById('copyBtn');
+    const scriptBlock = document.getElementById('scriptBlock');
+    const copyMsg = document.getElementById('copyMsg');
+
+    copyBtn.addEventListener('click', () => {
+      const textToCopy = scriptBlock.textContent.trim();
+      navigator.clipboard.writeText(textToCopy).then(() => {
+        copyMsg.style.display = 'block';
+        setTimeout(() => {
+          copyMsg.style.display = 'none';
+        }, 2000);
+      });
+    });
+  </script>
+</body>
+</html>
